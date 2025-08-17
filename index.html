@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>My Teacher</title>
+</head>
+
+<body>
+	<header class="mb-3">
+		<h1>Product Manager <span id="h1-span">System</span></h1>
+	</header>
+
+	<section class="container mb-3">
+		<form action="" id="form">
+			<input type="text" class="title" name="title" placeholder="title" value="">
+			<div class="expenses">
+				<input type="number" class="price" name="price" placeholder="price" value="">
+				<input type="number" class="taxes" name="taxes" placeholder="taxes" value="">
+				<input type="number" class="ads" name="ads" placeholder="ads" value="">
+				<input type="number" class="discount" name="discount" placeholder="discount" value="">
+				<label id="totalLabel" name="total">total : <span class="total"></span></label>
+			</div>
+			<input type="number" class="count" name="count" placeholder="count" value="">
+			<input type="text" class="category" name="category" placeholder="category" value="">
+			<input type="submit" class="create" name="create" value="create">
+			<input type="button" class="save" name="save" value="Save">
+		</form>
+		<div class="items">
+			<input type="text" class="search-by" name="searchBy" placeholder="search by .....">
+			<div class="search-btns">
+				<input type="button" class="search-by-title" name="search by title" value="search by title">
+				<input type="button" class="search-by-category" name="searcsCategory" value="search by category">
+			</div>
+			<button class="reset">Delete All (<span id="all-counter">0</span>) </button>
+		</div>
+	</section>
+
+	<section class="container mb-3" id="table">
+		<table>
+			<thead>
+				<tr>
+					<td>id</td>
+					<td>title</td>
+					<td>price</td>
+					<td>taxes</td>
+					<td>ads</td>
+					<td>discount</td>
+					<td>total</td>
+					<td>category</td>
+					<td>update</td>
+					<td>delete</td>
+				</tr>
+			</thead>
+			<tbody id="showData">
+			</tbody>
+		</table>
+	</section>
+
+	<footer id="footer" class="">
+		Copyright 3/2025 by <span id="name">
+			<a href="https://github.com/Mostafa-Ahmed-411" target="_blank">EARL Drsh</a><sup>&copy;</sup></span>
+	</footer>
+
+
+
+		<script src="js/main.js"></script>
+	</body>
+</html

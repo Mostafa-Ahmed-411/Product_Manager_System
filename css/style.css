@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--second-text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:is(button.update-btn, button.reset):hover {
+  background-color: #2101ac !important;
+  scale: 1.01;
+  transition: all 0.2s;
+}
+
+input {
+  outline: none;
+  padding-right: 10px !important;
+  transition: all 0.5s;
+}
+input:focus {
+  border: 0.5px solid #2101ac !important;
+}
+
+:is(input[type="button"], input[type="submit"]):hover {
+  background-color: #2101aca4 !important;
+  scale: 1.01;
+  transition: all 0.2s;
+}
+button.delete-btn:hover {
+  background-color: rgba(234, 0, 0, 0.888) !important;
+  scale: 1.01;
+  transition: all 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--main-bg-color);
+  max-height: 100vh;
+  padding: 1rem;
+}
+.mb-3 {
+  margin-bottom: 2rem !important;
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+li {
+  list-style: none;
+}
+:root {
+  --main-bg-color: #212529;
+  --second-bg-color: #0d161e;
+  --main-text-color: black;
+  --second-text-color: white;
+  --main-btn-color: rgba(8, 8, 129, 0.658);
+  --second-btn-color: rgb(148, 8, 8);
+}
+/* ----------------------------------- nav ---------------------------------- */
+header {
+  color: var(--second-text-color);
+  text-align: center;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  color: var(--second-text-color);
+}
+.container input {
+  background-color: var(--second-bg-color);
+  color: var(--second-text-color);
+  border: none;
+  margin: 0.4%;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+.container form .expenses input {
+  width: calc(100% / 5);
+}
+
+.container form .expenses label {
+  padding: 1% 1% 1% 10px;
+  border-radius: 10px;
+  background-color: var(--second-bg-color);
+  color: wheat;
+}
+.container form .expenses label .total {
+  color: wheat;
+}
+.container input[type="button"],
+.container input[type="submit"],
+.container .reset {
+  border: none;
+  background-color: var(--main-btn-color);
+  border-radius: 20px;
+  padding: 8px;
+}
+.container input::placeholder {
+  color: rgba(255, 255, 255, 0.493);
+}
+.container .items {
+  width: 100%;
+  display: grid;
+}
+.container .items .search-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.container .items .search-btns .search-by-title,
+.search-by-category {
+  width: 45%;
+}
+/* -------------------------------------------------------------------------- */
+#table {
+  text-align: center;
+}
+#table table thead {
+  background-color: rgb(11, 4, 39);
+  position: sticky;
+  top: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#table table thead td {
+  width: calc(100% / 9);
+  padding: 10px;
+}
+#table table thead td:first-child {
+  border-top-left-radius: 10px;
+}
+#table table thead td:last-child {
+  border-top-right-radius: 10px;
+}
+#table table tr {
+  border-bottom: 1px rgba(128, 128, 128, 0.265) solid;
+}
+#table table td {
+  padding: 1%;
+}
+#table table .update-btn,
+#table table .delete-btn {
+  font-size: small;
+  padding: 5% 15%;
+  border-radius: 15px;
+  border: none;
+}
+#table table .update-btn {
+  background-color: var(--main-btn-color);
+}
+#table table .delete-btn {
+  background-color: var(--second-btn-color);
+}
+#table table tbody tr:nth-child(odd) {
+  background-color: var(--second-bg-color);
+}
+#table table tbody tr:nth-child(even) {
+  background-color: var(--main-bg-color);
+}
+/* -------------------------------------------------------------------------- */
+.lists {
+  display: grid;
+}
+.list {
+  color: red;
+  background-color: #0d161e;
+}
+/* -------------------------------------------------------------------------- */
+#footer {
+  /* position: relative; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  background-color: rgb(11, 4, 39);
+  padding: 0.5rem 0;
+}
+#footer #name {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+#footer #name a {
+  color: tan;
+  font-weight: 900;
+}
+
+/* -------------------------------------------------------------------------- */
+.disapled-btn {
+  background-color: gray !important;
+}
+.hidden-btn {
+  display: none;
+}
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 500px) {
+  #name {
+    display: block;
+  }
+  h1 span {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  #table {
+    overflow-x: scroll;
+  }
+  .container input {
+    margin-bottom: 8px;
+  }
+  .container form .expenses {
+    margin-bottom: 10px;
+  }
+  .container input {
+    padding: 10px 10px;
+  }
+  .container form .expenses input {
+    width: calc(100% / 4.5);
+  }
+}
+#totalLabel {
+  /* background-color: red ; */
+}
